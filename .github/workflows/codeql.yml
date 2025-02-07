@@ -14,18 +14,15 @@ jobs:
       security-events: write
       packages: read
       contents: read
-    strategy:
-      fail-fast: false
-    steps:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
-      with:
-      languages: ${{ matrix.language }}
-    build-mode: ${{manual}}
-    init: CodeQL Analysis
-       uses: github/codeql-action/analyze@v3
+    uses: github/codeql-action/init@v3
+     with:
+  languages: ${{ matrix.language }}
+    mode: manual build
+init: CodeQL Analysis 
+      {{github/codeql-action/analyze@v3}}
           # Runner size impacts CodeQL analysis time. To learn more, please see:
     #   - https://gh.io/recommended-hardware-resources-for-running-codeql
     #   - https://gh.io/supported-runners-and-hardware-resources
