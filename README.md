@@ -1,8 +1,4 @@
-<img src="https://github.com/Apetree100122/ethvalidate/blob/master/img/logo.png" alt="EthValidate Logo" style="width:200px;height:auto;">
-
-
-
-
+![EthValidate Logo](https://github.com/Apetree100122/ethvalidate/blob/master/img/favicon2.ico)
 # EthValidate
 
 This tool is to validate:
