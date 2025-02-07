@@ -13,10 +13,8 @@ permissions:
 security-events: write
 packages: read
 contents: read
-  name: Checkout repository
-      uses: actions/checkout@v4
-    - name: Initialize CodeQL
-    uses: github/codeql-action/init@v3
+uses: actions/checkout@v4
+ github/codeql-action/init@v3
      with:
   languages: ${{ matrix.language }}
     mode: manual build
