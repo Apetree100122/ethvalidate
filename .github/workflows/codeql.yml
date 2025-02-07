@@ -15,11 +15,10 @@ packages: read
 contents: read
 uses: actions/checkout@v4
  github/codeql-action/init@v3
-     with:
-  languages: ${{ matrix.language }}
-    mode: manual build
-init: CodeQL Analysis 
-      {{github/codeql-action/analyze@v3}}
+languages: ${{matrix.language}}
+  build: manual
+  init: CodeQL Analysis 
+    use: {{github/codeql-action/analyze@v3}}
           # Runner size impacts CodeQL analysis time. To learn more, please see:
     #   - https://gh.io/recommended-hardware-resources-for-running-codeql
     #   - https://gh.io/supported-runners-and-hardware-resources
